@@ -5,7 +5,7 @@ import { Link} from 'react-scroll'
 export const TimeLine = () => {
     const mode = useSelector((state) => state.mode) // redux state
     return (
-            <section className={mode === 'day' ? "bg-gray-100 text-gray-800" : "bg-gray-800 text-white"}>
+            <section className={mode === 'day' ? "bg-gray-200 text-gray-800" : "bg-gray-800 text-white"}>
                 <Link className='WorkExperience'/>
                 <div className="container max-w-5xl px-4 py-12 mx-auto">
                     <div className="grid gap-4 mx-4 sm:grid-cols-12">
@@ -20,25 +20,25 @@ export const TimeLine = () => {
                                     <h3 className="text-xl font-semibold tracking-wide">Test Automation Developer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">TutorOcean</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>Sept 2021 - Dec 2021</time>
-                                    <p className="mt-3">Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                    <p className="mt-3">Developed over 50 new regression test cases for B2C and B2B test automation. Analyzed and fixed hundreds of test cases being run everyday. Setup the mobile test automation department for the company, using technologies like Appium and Robot Framework - reported my progress directly to TutorOcean's CTO.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">Full Stack Developer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">TutorOcean</h3>
-                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>Apr 2022 - Sept 2022</time>
-                                    <p className="mt-3">Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.</p>
+                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2022 - Aug 2022</time>
+                                    <p className="mt-3">Developed efficient react components and API calls for the company's B2B websites using the MERN stack. Fixed over 40% of issues being reported across all B2B software. Diagnosed new issues found upon testing components and data, using Studio 3T, and provided detailed documentation for them.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">CTO and Co-Founder</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Serv2U</h3>
-                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2023 - Current</time>
-                                    <p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2022 - Current</time>
+                                    <p className="mt-3">Led and technically mentored the engineering and UI/UX team of 5 to develop the company's website using the FReMP stack. Personally developed dozens of reusable and compact react components. Notably, the innovative cart system that is complex and well-engineered. Reviewed all frontend and backend code before being merged for production. Made crucial decisions while spearheading the engineering department as CTO and Co-Founder, such as using PayPal as our clients' secondary payment method.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">Software Engineer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">TradeRev</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>Jan 2023 - Apr 2023</time>
-                                    <p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                                    <p className="mt-3"></p>
                                 </div>
                             </div>
                         </div>

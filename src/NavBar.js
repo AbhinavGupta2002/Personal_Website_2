@@ -8,7 +8,7 @@ export const NavBar = () => {
     const mode = useSelector((state) => state.mode) // redux state
 
     return (
-      <div class={mode === 'night' ? "bg-gray-900" : "bg-white"}>
+      <div class={mode === 'night' ? "bg-gray-900" : "bg-gray-100"}>
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
@@ -72,8 +72,8 @@ export const NavBar = () => {
                 </svg>
               </button>
               {isMenuOpen && (
-                <div class="absolute top-0 left-0 w-full">
-                  <div class={mode === 'day' ? "p-5 bg-white border rounded shadow-sm" : "p-5 bg-gray-800 border border-gray-700 rounded shadow-sm"}>
+                <div class="absolute top-0 left-0 w-full z-10">
+                  <div class={mode === 'day' ? "p-5 bg-gray-100 border rounded shadow-sm" : "p-5 bg-gray-800 border border-gray-700 rounded shadow-sm"}>
                     <div class="flex items-center justify-between mb-4">
                       <div>
                         <a
