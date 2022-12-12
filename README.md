@@ -1,6 +1,6 @@
 # Personal Website 2.0
 
-## This is the latest hgihly responsive personal website that I have developed from scratch.
+## This is the latest highly responsive personal website that I have developed from scratch.
 
 ## Tools and Packages used to develop the website:
 
