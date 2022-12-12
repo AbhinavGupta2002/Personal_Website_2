@@ -23,7 +23,7 @@ const ScrollTopButton = () => {
     return (
         showScrollTop &&
             <button
-            className={mobileLayout ? "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed right-5 text-black opacity-80" : "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed right-5 text-black"}
+            className={mobileLayout ? "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed right-5 text-black opacity-80 transition-all" : "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed right-5 text-black"}
             style={{bottom: '4.5rem'}}
             onClick={handleClick}>
                 <BsFillCaretUpFill style={{fontSize: '110%'}}/>

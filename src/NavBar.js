@@ -82,7 +82,7 @@ export const NavBar = () => {
                           title="My Name"
                           class="inline-flex items-center"
                         >
-                          <span class={mode === 'day' ? "ml-2 text-xl font-bold tracking-wide text-gray-900 uppercase" : "ml-2 text-xl font-bold tracking-wide text-white uppercase"}>
+                          <span class={mode === 'day' ? "text-xl font-bold tracking-wide text-gray-900 uppercase" : "text-xl font-bold tracking-wide text-white uppercase"}>
                             Abhinav Gupta
                           </span>
                         </a>

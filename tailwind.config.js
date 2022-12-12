@@ -10,7 +10,7 @@ module.exports = {
       },
       screens: {
         'grd': '1268px',
-        'hdr': '1023px'
+        'hdr': '1024px'
       },
       height: {
         'grd': '13.5rem'

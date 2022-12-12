@@ -12,13 +12,13 @@ export const Header = () => {
     <div className={mode === 'night' ? "bg-gray-900" : "bg-white"}>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col items-center justify-between lg:flex-row">
-          <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
+          <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0 text-center hdr:text-start">
             <div className="max-w-xl mb-6">
-              <h2 className={mode === 'day' ? "max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none" : 
-                                              "max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none"}>
+              <h2 className={mode === 'day' ? "mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none" : 
+                                              "mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none"}>
                   <TypeAnimation
                   sequence={[
-                    "Hi, My Name Is Abhinav 👨‍💻"
+                    "Hi, My Name is Abhinav 👨‍💻"
                     ]}
                     speed={35}
                     wrapper="span"
@@ -39,7 +39,7 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <br></br>
-                  <p className="w-fit flex gap-5 align-middle">
+                  <p className="flex gap-8 hdr:gap-5 justify-center hdr:justify-start">
                     <a
                     href="https://github.com/AbhinavGupta2002"
                     aria-label="My GitHub Profile"
