@@ -15,6 +15,7 @@
 * React Scroll
 * React Type Animation
 * Daisy UI
+* GitHub Pages
 * Git
 
 ## This project is under the MIT License.
