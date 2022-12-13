@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Personal_Website_2/static/css/main.f2816232.css",
-    "main.js": "/Personal_Website_2/static/js/main.ccf47878.js",
-    "static/js/787.5809834d.chunk.js": "/Personal_Website_2/static/js/787.5809834d.chunk.js",
-    "static/media/speedyMathDemo.gif": "/Personal_Website_2/static/media/speedyMathDemo.5a2b4325baf8b0b22129.gif",
-    "static/media/headshot.png": "/Personal_Website_2/static/media/headshot.29c74248854bd1963ee7.png",
-    "static/media/serv2uWebsite.png": "/Personal_Website_2/static/media/serv2uWebsite.f12a5c789db3ecaec0bc.png",
-    "static/media/personalWebsite.png": "/Personal_Website_2/static/media/personalWebsite.fdd7c758bbe126805ab1.png",
-    "static/media/resume.pdf": "/Personal_Website_2/static/media/resume.d12f9758313f54423e53.pdf",
-    "static/media/connectPlus.jpg": "/Personal_Website_2/static/media/connectPlus.e2d92e0e90651596e3d9.jpg",
-    "index.html": "/Personal_Website_2/index.html",
-    "main.f2816232.css.map": "/Personal_Website_2/static/css/main.f2816232.css.map",
-    "main.ccf47878.js.map": "/Personal_Website_2/static/js/main.ccf47878.js.map",
-    "787.5809834d.chunk.js.map": "/Personal_Website_2/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/static/css/main.f2816232.css",
+    "main.js": "/static/js/main.ecaf32c2.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/speedyMathDemo.gif": "/static/media/speedyMathDemo.5a2b4325baf8b0b22129.gif",
+    "static/media/headshot.png": "/static/media/headshot.29c74248854bd1963ee7.png",
+    "static/media/serv2uWebsite.png": "/static/media/serv2uWebsite.f12a5c789db3ecaec0bc.png",
+    "static/media/personalWebsite.png": "/static/media/personalWebsite.fdd7c758bbe126805ab1.png",
+    "static/media/resume.pdf": "/static/media/resume.d12f9758313f54423e53.pdf",
+    "static/media/connectPlus.jpg": "/static/media/connectPlus.e2d92e0e90651596e3d9.jpg",
+    "index.html": "/index.html",
+    "main.f2816232.css.map": "/static/css/main.f2816232.css.map",
+    "main.ecaf32c2.js.map": "/static/js/main.ecaf32c2.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2816232.css",
-    "static/js/main.ccf47878.js"
+    "static/js/main.ecaf32c2.js"
   ]
 }
