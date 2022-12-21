@@ -23,13 +23,13 @@ export const NavBar = () => {
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class={mode === 'day' ? "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-gray-500 cursor-pointer" : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 cursor-pointer"}>
-                <Link className='Header1' to='WorkExperience'>Work Experience</Link>
+                <Link smooth={true} className='Header1' to='WorkExperience'>Work Experience</Link>
               </li>
               <li class={mode === 'day' ? "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-gray-500 cursor-pointer" : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 cursor-pointer"}>
-                <Link className='Header2' to='FeaturedProjects'>Featured Projects</Link>
+                <Link smooth={true} className='Header2' to='FeaturedProjects'>Featured Projects</Link>
               </li>
               <li class={mode === 'day' ? "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-gray-500 cursor-pointer" : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 cursor-pointer"}>
-                <Link className='Header3' to='Interests'>Interests</Link>
+                <Link smooth={true} className='Header3' to='Interests'>Interests</Link>
               </li>
               <li>
                 <a
@@ -107,13 +107,13 @@ export const NavBar = () => {
                     <nav>
                       <ul class="space-y-4">
                         <li class={mode === 'day' ? "cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-gray-500 w-fit" : "cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 w-fit"}>
-                            <Link className='MobileHeader1' to='WorkExperience' onClick={() => setIsMenuOpen(false)}>Work Experience</Link>
+                            <Link smooth={true} className='MobileHeader1' to='WorkExperience' onClick={() => setIsMenuOpen(false)}>Work Experience</Link>
                         </li>
                         <li class={mode === 'day' ? "cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-gray-500 w-fit" : "cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 w-fit"}>
-                            <Link className='MobileHeader2' to='FeaturedProjects' onClick={() => setIsMenuOpen(false)}>Featured Projects</Link>
+                            <Link smooth={true} className='MobileHeader2' to='FeaturedProjects' onClick={() => setIsMenuOpen(false)}>Featured Projects</Link>
                         </li>
                         <li class={mode === 'day' ? "cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-gray-500 w-fit" : "cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-300 w-fit"}>
-                            <Link className='MobileHeader3' to='Interests' onClick={() => setIsMenuOpen(false)}>Interests</Link>
+                            <Link smooth={true} className='MobileHeader3' to='Interests' onClick={() => setIsMenuOpen(false)}>Interests</Link>
                         </li>
                         <li>
                           <a

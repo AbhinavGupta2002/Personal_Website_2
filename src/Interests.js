@@ -7,7 +7,7 @@ export const Interests = () => {
 
     return (
         <div class={mode === 'day' ? "bg-gray-200" : "bg-gray-800"}>
-            <Link className="Interests"/>
+            <Link smooth={true} className="Interests"/>
             <h3 className={mode === 'day' ? "text-center text-3xl font-semibold text-gray-900 pt-10" : "text-center text-3xl font-semibold text-white pt-10"}>Interests</h3>
             <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <div class="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4">

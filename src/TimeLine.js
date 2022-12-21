@@ -6,7 +6,7 @@ export const TimeLine = () => {
     const mode = useSelector((state) => state.mode) // redux state
     return (
             <section className={mode === 'day' ? "bg-gray-200 text-gray-800" : "bg-gray-800 text-white"}>
-                <Link className='WorkExperience'/>
+                <Link smooth={true} className='WorkExperience'/>
                 <div className="container max-w-5xl px-4 py-12 mx-auto">
                     <div className="grid gap-4 mx-4 sm:grid-cols-12">
                         <div className="col-span-12 sm:col-span-3">

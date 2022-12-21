@@ -75,7 +75,7 @@ export const FeaturedProjects = () => {
     ]
     return (
             <section className={mode === 'day' ? "bg-gray-100 text-gray-800" : "bg-gray-900 text-white"}>
-                <Link className='FeaturedProjects'/>
+                <Link smooth={true} className='FeaturedProjects'/>
                 <div className="container max-w-5xl px-4 py-12 mx-auto">
                     <div className="grid sm:content-center lg:gap-4 md:gap-4 mx-4 sm:grid-cols-12 justify-center">
                         <div className="col-span-12 sm:col-span-3">
