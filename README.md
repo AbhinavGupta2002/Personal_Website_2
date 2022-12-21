@@ -9,7 +9,7 @@
 * Javascript
 * JSX / CSS
 * React
-* RRedux
+* Redux
 * TailwindCSS
 * React Icons
 * React Scroll
