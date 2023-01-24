@@ -47,6 +47,7 @@ export const FeaturedProjects = () => {
         {
             thumbnail: tripTailor,
             title: 'TripTailor',
+            titleLink: 'https://triptailor.onrender.com/chooseCountry',
             body: 'Intuitive AI platform that enables you to intelligently make your travel plans for any country in the world with ease.',
             tags: ['React JS', 'PostgreSQL', 'ElephantSQL', 'Flask', 'Cohere API', 'Unsplash API', 'Render', 'JSX/CSS', 'Git'],
             links: [
