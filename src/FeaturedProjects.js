@@ -10,6 +10,7 @@ import personalWebsite from './img/personalWebsite.png'
 import serv2uWebsite from './img/serv2uWebsite.png'
 import speedyMathDemo from './img/speedyMathDemo.gif'
 import connectPlus from './img/connectPlus.jpg'
+import tripTailor from './img/triptailor.jpeg'
 
 export const FeaturedProjects = () => {
     const mode = useSelector((state) => state.mode) // redux state
@@ -30,7 +31,7 @@ export const FeaturedProjects = () => {
             thumbnail: serv2uWebsite,
             title: 'Serv2U',
             body: 'Website being developed for my startup, which is a marketplace for people to order meals prepared by homecooks and having it delivered to their doorstep.',
-            tags: ['FReMP', 'React JS', 'MongoDB', 'Flask', 'GCP', 'JSX/CSS', 'Redux', 'Heroku'],
+            tags: ['FReMP', 'React JS', 'MongoDB', 'Flask', 'GCP', 'Redux', 'Heroku', 'JSX/CSS'],
             titleLink: 'https://www.serv2u.org',
             links: [
                 {
@@ -40,6 +41,22 @@ export const FeaturedProjects = () => {
                 {
                     logo: <AiFillInstagram className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
                     link: 'https://www.instagram.com/serv.2u'
+                }
+            ]
+        },
+        {
+            thumbnail: tripTailor,
+            title: 'TripTailor',
+            body: 'Intuitive AI platform that enables you to intelligently make your travel plans for any country in the world with ease.',
+            tags: ['React JS', 'PostgreSQL', 'ElephantSQL', 'Flask', 'Cohere API', 'Unsplash API', 'Render', 'JSX/CSS', 'Git'],
+            links: [
+                {
+                    logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
+                    link: 'https://github.com/orgs/uofthackx-geese/repositories'
+                },
+                {
+                    logo: <SiDevpost className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
+                    link: 'https://devpost.com/software/triptailor'
                 }
             ]
         },
