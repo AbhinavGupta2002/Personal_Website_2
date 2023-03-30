@@ -31,11 +31,11 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <p>
-                      As an intern, I have been developing great software for companies. I will be joining TradeRev as a Software Engineering Intern for Winter 2023.
+                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I have been managing a team to build an innovative product from scratch. I will be joining Deloitte as a Cloud Platform Developer Intern for Spring 2023.
                   </p>
                   <br></br>
                   <p>
-                      I am currently looking for Software Development internship/co-op opportunities for Summer or Fall 2023.
+                      I am currently looking for Software Development internship/co-op opportunities for Spring 2024.
                   </p>
                   <br></br>
                   <br></br>
