@@ -11,6 +11,7 @@ import serv2uWebsite from './img/serv2uWebsite.png'
 import speedyMathDemo from './img/speedyMathDemo.gif'
 import connectPlus from './img/connectPlus.jpg'
 import tripTailor from './img/triptailor.jpeg'
+import keyHaven from './img/keyHavenLogo.png'
 
 export const FeaturedProjects = () => {
     const mode = useSelector((state) => state.mode) // redux state
@@ -41,6 +42,19 @@ export const FeaturedProjects = () => {
                 {
                     logo: <AiFillInstagram className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
                     link: 'https://www.instagram.com/serv.2u'
+                }
+            ]
+        },
+        {
+            thumbnail: keyHaven,
+            isRounded: true,
+            title: 'KeyHaven',
+            body: 'A password manager with advanced encryption and top-notch security. Data organization, collaboration, and security are the highlighting features of the product.',
+            tags: ['React TS', 'PostgreSQL', 'ElephantSQL', 'Express', 'NodeJS', 'TailwindCSS', 'Redis Cache', 'JSX/CSS', 'Git'],
+            links: [
+                {
+                    logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
+                    link: 'https://github.com/AbhinavGupta2002/KeyHaven'
                 }
             ]
         },
@@ -101,9 +115,9 @@ export const FeaturedProjects = () => {
                                 <h3 className="text-3xl font-semibold">Featured Projects</h3>
                             </div>
                         </div>
-                        <div className="relative grid gap-x-grid gap-y-8 grd:grid-cols-2 text-white">
+                        <div className={`relative grid gap-x-grid gap-y-8 grd:grid-cols-2 ${mode === 'day' ? 'text-gray-800' : 'text-white'}`}>
                             {projects.map(project =>
-                                <div className={mode === 'day' ? "card  w-80 sm:w-96 bg-base-100 shadow-xl border border-gray-200" : "card  w-80 sm:w-96 bg-base-100 shadow-xl border border-gray-800"}>
+                                <div className={mode === 'day' ? "card  w-80 sm:w-96 bg-gray-300 shadow-xl border border-gray-400" : "card  w-80 sm:w-96 bg-base-100 shadow-xl border border-gray-800"}>
                                     <figure><img className={project.isRounded ? "h-grd rounded-xl mt-3" : "grd:h-grd"} src={project.thumbnail} alt={project.title}/></figure>
                                     <div className="card-body">
                                         <h2 className={project.isRounded ? "card-title justify-between -mt-3" : "card-title justify-between"}>

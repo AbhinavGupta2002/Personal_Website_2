@@ -31,7 +31,7 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <p>
-                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I have been managing a team to build an innovative product from scratch. I will be joining Deloitte as a Cloud Platform Developer Intern for Spring 2023.
+                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I have been managing a team to build an innovative product from scratch. I am currently working at Deloitte as a Cloud Platform Developer Intern for Spring 2023.
                   </p>
                   <br></br>
                   <p>
@@ -75,7 +75,7 @@ export const Header = () => {
           </div>
           <div className="relative lg:w-1/2">
             <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+              className="object-cover w-full h-56 rounded shadow-lg sm:h-96 border border-gray-700"
               src={headshot}
               alt=""
             />
