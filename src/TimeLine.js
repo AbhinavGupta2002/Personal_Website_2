@@ -20,7 +20,7 @@ export const TimeLine = () => {
                                     <h3 className="text-xl font-semibold tracking-wide">Cloud Platform Developer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Deloitte</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2023 - Aug 2023</time>
-                                    <p className="mt-3">Built the backend for Deloitte's B2B cloud provisioning platform that can create Azure, GCP, or AWS cloud environments, which has strict policies of a company enforced within it - highly customizable based on the client's requests.</p>
+                                    <p className="mt-3">Built the backend for Deloitte's B2B cloud provisioning service that can create AWS, GCP, and Azure cloud environments, which has strict policies of a client enforced within it - highly customizable based on their requests. Specifically, used .NET with C# to engineer a highly decoupled and modularized system to dynamically search for cloud bundles stored in MongoDB. Additionally, Implemented a service that identifies and schedules the execution of tasks for the provisioning platform.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">Software Engineer</h3>
