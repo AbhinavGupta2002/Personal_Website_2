@@ -50,7 +50,7 @@ export const FeaturedProjects = () => {
             isRounded: true,
             title: 'KeyHaven',
             body: 'A password manager with advanced encryption and top-notch security. Data organization, collaboration, and security are the highlighting features of the product.',
-            tags: ['React TS', 'PostgreSQL', 'ElephantSQL', 'Express', 'NodeJS', 'TailwindCSS', 'Redis Cache', 'JSX/CSS', 'Git'],
+            tags: ['React TS', 'PostgreSQL', 'ElephantSQL', 'Express', 'TailwindCSS', 'Redis Cache', 'Docker', 'JSX/CSS', 'Node TS', 'Git'],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
