@@ -17,13 +17,13 @@ export const TimeLine = () => {
                         <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
-                                    <h3 className="text-xl font-semibold tracking-wide">Cloud Platform Developer</h3>
+                                    <h3 className="text-xl font-semibold tracking-wide">Cloud Backend Engineer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Deloitte</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2023 - Aug 2023</time>
                                     <p className="mt-3">Built the backend for Deloitte's B2B cloud provisioning service that can create AWS, GCP, and Azure cloud environments, which has strict policies of a client enforced within it - highly customizable based on their requests. Specifically, used .NET with C# to engineer a highly decoupled and modularized system to dynamically search for cloud bundles stored in MongoDB. Additionally, Implemented a service that identifies and schedules the execution of tasks for the provisioning platform.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
-                                    <h3 className="text-xl font-semibold tracking-wide">Software Engineer</h3>
+                                    <h3 className="text-xl font-semibold tracking-wide">Backend Engineer</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">TradeRev</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>Jan 2023 - Apr 2023</time>
                                     <p className="mt-3">Implemented REST APIs in AWS Serverless with PostgreSQL and Elastic Search databases, which involved making
@@ -34,7 +34,7 @@ organizations like Okta and Amazon. Developed software for and worked closely wi
                                     <h3 className="text-xl font-semibold tracking-wide">CTO and Co-Founder</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Serv2U</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2022 - Current</time>
-                                    <p className="mt-3">Led and technically mentored the engineering team to develop the company's website using the FReMP stack. Personally developed dozens of reusable and compact react components. Notably, the innovative cart system that is complex and well-engineered. Reviewed all frontend and backend code before being merged for production. Made crucial decisions while spearheading the engineering department as CTO and Co-Founder, such as using PayPal as our clients' secondary payment method.</p>
+                                    <p className="mt-3">Led and technically mentored the engineering team to develop the company's website using the FReMP stack - followed the agile methodology. Personally developed dozens of reusable and compact react components. Notably, the innovative cart system that is complex and well-engineered. Reviewed all frontend and backend code before being merged for production. Made crucial decisions while spearheading the engineering department as CTO and Co-Founder, such as using PayPal as our clients' secondary payment method.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">Frontend Developer</h3>

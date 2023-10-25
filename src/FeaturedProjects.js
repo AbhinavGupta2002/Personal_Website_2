@@ -19,7 +19,7 @@ export const FeaturedProjects = () => {
         {
             thumbnail: personalWebsite,
             title: 'Personal Website',
-            body: 'Responsive website developed, from scratch, to display my skills to colleagues, friends, and recruiters.',
+            body: 'Responsive two-themed website developed, from scratch, to display my skills to colleagues, friends, and recruiters.',
             tags: ['React JS', 'Redux', 'TailwindCSS', 'Git'],
             links: [
                 {

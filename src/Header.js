@@ -1,5 +1,5 @@
 import React from 'react'
-import headshot from './img/headshot.png'
+import headshot from './img/headshot1.png'
 import { useSelector } from 'react-redux'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 import {SiDevpost} from 'react-icons/si'
@@ -27,7 +27,7 @@ export const Header = () => {
               </h2>
               <p className={mode === 'day' ? "text-base text-gray-700 md:text-lg" : "text-base text-gray-400 md:text-lg"}>
                   <p>
-                      I am a 3rd year student studying Honors Computer Science at the University of Waterloo.
+                      I am a 3rd year student studying Honors Computer Science - Software Engineering Specialization at the University of Waterloo.
                   </p>
                   <br></br>
                   <p>
@@ -75,7 +75,7 @@ export const Header = () => {
           </div>
           <div className="relative lg:w-1/2">
             <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96 border border-gray-700"
+              className={`object-cover w-full h-56 rounded shadow-lg sm:h-96 border ${mode === 'day' ? 'border-gray-400' : 'border-gray-700'}`}
               src={headshot}
               alt=""
             />
