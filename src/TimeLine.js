@@ -24,11 +24,11 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">Backend Engineer</h3>
-                                    <h3 className="text-xl font-semibold tracking-wide">TradeRev</h3>
+                                    <h3 className="text-xl font-semibold tracking-wide">OpenLane</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>Jan 2023 - Apr 2023</time>
                                     <p className="mt-3">Implemented REST APIs in AWS Serverless with PostgreSQL and Elastic Search databases, which involved making
 lambda functions, handlers, controllers, query builders, post-processors, and adding on to Swagger files in TypeScript. Developed object-oriented backend services that call external APIs from
-organizations like Okta and Amazon. Developed software for and worked closely with teams from different organizations, such as Adesa, TradeRev, and OpenLane.</p>
+organizations like Okta and Amazon. Developed software for and worked closely with teams from different organizations, such as Adesa, TradeRev, and Okta.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-700">
                                     <h3 className="text-xl font-semibold tracking-wide">CTO and Co-Founder</h3>
