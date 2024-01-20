@@ -27,7 +27,7 @@ export const Header = () => {
               </h2>
               <p className={mode === 'day' ? "text-base text-gray-700 md:text-lg" : "text-base text-gray-400 md:text-lg"}>
                   <p>
-                      I am a 3rd year student studying Honors Computer Science - Software Engineering Specialization at the University of Waterloo.
+                      I am a 4th year student studying Honors Computer Science - Software Engineering Specialization at the University of Waterloo.
                   </p>
                   <br></br>
                   <p>
