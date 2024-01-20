@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.e2b56042.css",
-    "main.js": "/static/js/main.f1ecca31.js",
+    "main.js": "/static/js/main.200bc05e.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/speedyMathDemo.gif": "/static/media/speedyMathDemo.5a2b4325baf8b0b22129.gif",
     "static/media/headshot1.png": "/static/media/headshot1.f2eb9a403d8e0f1dbdaf.png",
     "static/media/serv2uWebsite.png": "/static/media/serv2uWebsite.f12a5c789db3ecaec0bc.png",
     "static/media/personalWebsite.png": "/static/media/personalWebsite.4b95eb9ba8ab610962ac.png",
     "static/media/keyHavenLogo.png": "/static/media/keyHavenLogo.aa5d45320c8851df5612.png",
-    "static/media/resume.pdf": "/static/media/resume.aae24881b1aa9fbc2b30.pdf",
+    "static/media/resume.pdf": "/static/media/resume.e6593d0edb81f43522e5.pdf",
     "static/media/connectPlus.jpg": "/static/media/connectPlus.e2d92e0e90651596e3d9.jpg",
     "static/media/triptailor.jpeg": "/static/media/triptailor.5189b4b02a962744c8e0.jpeg",
     "index.html": "/index.html",
     "main.e2b56042.css.map": "/static/css/main.e2b56042.css.map",
-    "main.f1ecca31.js.map": "/static/js/main.f1ecca31.js.map",
+    "main.200bc05e.js.map": "/static/js/main.200bc05e.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2b56042.css",
-    "static/js/main.f1ecca31.js"
+    "static/js/main.200bc05e.js"
   ]
 }
