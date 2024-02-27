@@ -3,6 +3,16 @@ import { useSelector } from 'react-redux'
 import { Link} from 'react-scroll'
 
 export const TimeLine = () => {
+    /*<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
+        <TimeLineLogo
+            imgUrl='https://logo.clearbit.com/www.tesla.com'
+            companyUrl='https://www.tesla.com'
+        />
+        <h3 className="text-xl font-semibold tracking-wide">Full Stack Engineer Intern</h3>
+        <h3 className="text-xl font-semibold tracking-wide">Tesla</h3>
+        <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2024 - Aug 2024</time>
+        <p className="mt-3"></p>
+    </div>*/
     const mode = useSelector((state) => state.mode) // redux state
     return (
             <section className={mode === 'day' ? "bg-gray-200 text-gray-800" : "bg-gray-800 text-white"}>
@@ -16,16 +26,6 @@ export const TimeLine = () => {
                         </div>
                         <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300 text-center sm:text-left">
-                                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
-                                    <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.tesla.com'
-                                        companyUrl='https://www.tesla.com'
-                                    />
-                                    <h3 className="text-xl font-semibold tracking-wide">Full Stack Engineer Intern</h3>
-                                    <h3 className="text-xl font-semibold tracking-wide">Tesla</h3>
-                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2024 - Aug 2024</time>
-                                    <p className="mt-3"></p>
-                                </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
                                         imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/DeloitteNewSmall.png/220px-DeloitteNewSmall.png'
