@@ -55,7 +55,7 @@ organizations like Okta and Amazon. Developed software for and worked closely wi
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">CTO and Co-Founder</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Serv2U</h3>
-                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2022 - Current</time>
+                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2022 - July 2023</time>
                                     <p className="mt-3">Led and technically mentored the engineering team to develop the company's website using the FReMP stack - followed the agile methodology. Personally developed dozens of reusable and compact react components. Notably, the innovative cart system that is complex and well-engineered. Reviewed all frontend and backend code before being merged for production. Made crucial decisions while spearheading the engineering department as CTO and Co-Founder, such as using PayPal as our clients' secondary payment method.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">

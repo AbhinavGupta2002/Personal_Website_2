@@ -31,7 +31,7 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <p>
-                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I have been managing teams to build an innovative product from scratch.
+                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I was managing teams to build an innovative product from scratch.
                   </p>
                   <br></br>
                   <p>
