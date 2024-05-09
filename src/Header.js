@@ -31,11 +31,11 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <p>
-                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I was managing teams to build an innovative product from scratch.
+                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I managed teams to build an innovative product from scratch.
                   </p>
                   <br></br>
                   <p>
-                      I am currently looking for Software Development internship/co-op opportunities for Summer 2024.
+                      I am currently looking for Software Development internship/co-op opportunities for Fall 2024 and new grad opportunities starting Summer 2025.
                   </p>
                   <br></br>
                   <br></br>
