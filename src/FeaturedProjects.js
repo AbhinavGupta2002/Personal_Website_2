@@ -12,6 +12,48 @@ import speedyMathDemo from './img/speedyMathDemo.gif'
 import connectPlus from './img/connectPlus.jpg'
 import tripTailor from './img/triptailor.jpeg'
 import keyHaven from './img/keyHavenLogo.png'
+import deepNN from './img/deepNN.png'
+
+const TAG = {
+    Language: {
+        Python: 'Python',
+        Jsx: 'JSX/CSS',
+        Swift: 'Swift',
+        C: 'C'
+    },
+    Tool: {
+        Git: 'Git',
+        Redux: 'Redux',
+        Tailwind: 'TailwindCSS',
+        Numpy: 'NumPy',
+        Matplotlib: 'Matplotlib',
+        Sklearn: 'SkLearn',
+        Mongodb: 'MongoDB',
+        Gcp: 'GCP',
+        Aws: 'AWS',
+        Cohere: 'Cohere API',
+        Heroku: 'Heroku',
+        Elephant: 'ElephantSQL',
+        Unsplash: 'Unsplash API',
+        Render: 'Render',
+        Rediscache: 'Redis Cache',
+        Docker: 'Docker',
+        Xcode: 'XCode',
+        Postgres: 'PostgreSQL'
+    },
+    Framework: {
+        Reactjs: 'React JS',
+        Reactts: 'React TS',
+        Flask: 'Flask',
+        Express: 'Express',
+        Nodets: 'Node TS',
+    },
+    Concept: {
+        NN: 'Neural Networks',
+        ML: 'Machine Learning',
+        Fremp: 'FReMP'
+    }
+}
 
 export const FeaturedProjects = () => {
     const mode = useSelector((state) => state.mode) // redux state
@@ -20,7 +62,7 @@ export const FeaturedProjects = () => {
             thumbnail: personalWebsite,
             title: 'Personal Website',
             body: 'Responsive two-themed website developed, from scratch, to display my skills to colleagues, friends, and recruiters.',
-            tags: ['React JS', 'Redux', 'TailwindCSS', 'Git'],
+            tags: [TAG.Framework.Reactjs, TAG.Tool.Redux, TAG.Tool.Tailwind, TAG.Tool.Git],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
@@ -29,10 +71,22 @@ export const FeaturedProjects = () => {
             ]
         },
         {
+            thumbnail: deepNN,
+            title: 'Red Wine Classifier',
+            body: 'Built a non-linear feedforward deep neural network to predict the quality of red wine, given its physical attributes.',
+            tags: [TAG.Language.Python, TAG.Tool.Numpy, TAG.Tool.Matplotlib, TAG.Tool.Sklearn, TAG.Concept.NN, TAG.Concept.ML],
+            links: [
+                {
+                    logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
+                    link: 'https://github.com/AbhinavGupta2002/RedWineClassifier'
+                }
+            ]
+        },
+        {
             thumbnail: serv2uWebsite,
             title: 'Serv2U',
             body: 'Website being developed for my startup, which is a marketplace for people to order meals prepared by homecooks and having it delivered to their doorstep.',
-            tags: ['FReMP', 'React JS', 'MongoDB', 'Flask', 'GCP', 'Redux', 'Heroku', 'JSX/CSS'],
+            tags: [TAG.Concept.Fremp, TAG.Framework.Reactjs, TAG.Tool.Mongodb, TAG.Framework.Flask, TAG.Tool.Gcp, TAG.Tool.Redux, TAG.Tool.Heroku, TAG.Language.Jsx],
             titleLink: 'https://www.serv2u.org',
             links: [
                 {
@@ -50,7 +104,7 @@ export const FeaturedProjects = () => {
             isRounded: true,
             title: 'KeyHaven',
             body: 'A password manager with advanced encryption and top-notch security. Data organization, collaboration, and security are the highlighting features of the product.',
-            tags: ['React TS', 'PostgreSQL', 'ElephantSQL', 'Express', 'TailwindCSS', 'Redis Cache', 'Docker', 'JSX/CSS', 'Node TS', 'Git'],
+            tags: [TAG.Framework.Reactts, TAG.Tool.Postgres, TAG.Tool.Elephant, TAG.Framework.Express, TAG.Tool.Tailwind, TAG.Tool.Rediscache, TAG.Tool.Docker, TAG.Language.Jsx, TAG.Framework.Nodets, TAG.Tool.Git],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
@@ -63,7 +117,7 @@ export const FeaturedProjects = () => {
             title: 'TripTailor',
             titleLink: 'https://triptailor.onrender.com/chooseCountry',
             body: 'Intuitive AI platform that enables you to intelligently make your travel plans for any country in the world with ease.',
-            tags: ['React JS', 'PostgreSQL', 'ElephantSQL', 'Flask', 'Cohere API', 'Unsplash API', 'Render', 'JSX/CSS', 'Git'],
+            tags: [TAG.Framework.Reactjs, TAG.Tool.Postgres, TAG.Tool.Elephant, TAG.Framework.Flask, TAG.Tool.Cohere, TAG.Tool.Unsplash, TAG.Tool.Render, TAG.Language.Jsx, TAG.Tool.Git],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
@@ -79,7 +133,7 @@ export const FeaturedProjects = () => {
             thumbnail: speedyMathDemo,
             title: 'Speedy Math',
             body: 'iOS application that is intended for young students to have fun practicing their arithmetic skills.',
-            tags: ['XCode', 'Swift', 'Git'],
+            tags: [TAG.Tool.Xcode, TAG.Language.Swift, TAG.Tool.Git],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
@@ -92,7 +146,7 @@ export const FeaturedProjects = () => {
             thumbnail: connectPlus,
             title: 'Connect+',
             body: 'Digital version of the classic physical board game, Connect4, but reimagined with additional unique features that make the game more enjoyable.',
-            tags: ['C', 'Git'],
+            tags: [TAG.Language.C, TAG.Tool.Git],
             links: [
                 {
                     logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
