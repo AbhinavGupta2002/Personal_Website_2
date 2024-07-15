@@ -34,7 +34,9 @@ export const TimeLine = () => {
                                     <h3 className="text-xl font-semibold tracking-wide">Machine Learning Engineering Intern</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Bell</h3>
                                     <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2024 - Aug 2024</time>
-                                    <p className="mt-3">Currently working on building scripts to deploy ML models to production and scaling them accordingly.</p>
+                                    <p className="mt-3">Built scripts to deploy ML models to production and scaling them accordingly.
+                                        Developed software to streamline CloudSQL schema changes from DEV to UAT and PROD using AtlasGo, Bash, and YAML being run on GitLab CI/CD - eliminating the chance for DDL mismatches between database environments. These databases store training data for the models.
+                                        Built a BentoML unit testing framework with Python, Pytest, and Docker to test the model and its API logic, which will run in the CI pipeline with Jenkins, for Bell's data scientists to implement for their respective AI projects.</p>
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
