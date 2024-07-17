@@ -1,6 +1,6 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { Link} from 'react-scroll'
+import {useSelector} from 'react-redux'
+import {Link} from 'react-scroll'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {SiDevpost} from 'react-icons/si'
