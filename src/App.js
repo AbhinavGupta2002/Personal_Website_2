@@ -5,13 +5,15 @@ import Header from './Header';
 import Interests from './Interests';
 import NavBar from './NavBar';
 import ScrollTopButton from './ScrollTopButton';
+import TikTokHighlights from './TikTokHighlights';
 import TimeLine from './TimeLine';
 
 export const App = () => {
   return (
     <>
       <NavBar/>
-      <Header/> 
+      <Header/>
+      <TikTokHighlights/>
       <TimeLine/>
       <FeaturedProjects/>
       <Interests/>

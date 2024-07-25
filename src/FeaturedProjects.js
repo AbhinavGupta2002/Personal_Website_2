@@ -173,7 +173,7 @@ export const FeaturedProjects = () => {
         }
     ]
     return (
-            <section className={mode === 'day' ? "bg-gray-100 text-gray-800" : "bg-gray-900 text-white"}>
+            <section className={mode === 'day' ? "bg-gray-200 text-gray-800" : "bg-gray-800 text-white"}>
                 <Link smooth={true} className='FeaturedProjects'/>
                 <div className="container max-w-5xl px-4 py-12 mx-auto">
                     <div className="grid sm:content-center lg:gap-4 md:gap-4 mx-4 sm:grid-cols-12 justify-center">
@@ -184,7 +184,7 @@ export const FeaturedProjects = () => {
                         </div>
                         <div className={`relative grid gap-x-grid gap-y-8 grd:grid-cols-2 ${mode === 'day' ? 'text-gray-800' : 'text-white'}`}>
                             {projects.map(project =>
-                                <div className={mode === 'day' ? "card  w-80 sm:w-96 bg-gray-300 shadow-xl border border-gray-400" : "card  w-80 sm:w-96 bg-base-100 shadow-xl border border-gray-800"}>
+                                <div className={mode === 'day' ? "card  w-80 sm:w-96 bg-gray-300 shadow-xl border border-gray-400" : "card  w-80 sm:w-96 bg-base-100 shadow-xl border border-gray-700"}>
                                     <figure><img className={project.isRounded ? "h-grd rounded-xl mt-3" : "grd:h-grd"} src={project.thumbnail} alt={project.title}/></figure>
                                     <div className="card-body">
                                         <h2 className={project.isRounded ? "card-title justify-between -mt-3" : "card-title justify-between"}>
