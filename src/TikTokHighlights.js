@@ -2,6 +2,8 @@ import { TikTokEmbed } from 'react-social-media-embed';
 import { useSelector } from 'react-redux'
 import React from 'react';
 
+import tiktokHeadshot from './img/tiktokHeadshot.jpeg'
+
 const TikTokHighlights = () => {
     const tikToks = [
         { url: "https://www.tiktok.com/@saccomander/video/7383578560021187846" },
@@ -20,8 +22,8 @@ const TikTokHighlights = () => {
                         href='https://www.tiktok.com/@saccomander'
                     >
                         <img
-                            src='https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/c6f20fa8c7c1d112ea9a1c5918f4b607.jpeg?lk3s=a5d48078&nonce=5625&refresh_token=5b7681d7834ba51b20539bd90b62a1fc&x-expires=1722042000&x-signature=VMIVLVRwSO25BVg5EWK3FerXgog%3D&shp=a5d48078&shcp=81f88b70'
-                            width='30%'
+                            src={tiktokHeadshot}
+                            width='80px'
                             className='rounded-full border border-gray-400'
                         />
                         <div className='flex flex-col items-center'>

@@ -35,7 +35,7 @@ export const Header = () => {
                   </p>
                   <br></br>
                   <p>
-                      I am currently looking for Software Development internship/co-op opportunities for Fall 2024 and new grad opportunities starting Summer 2025.
+                      I am currently looking for new grad opportunities starting Summer 2025.
                   </p>
                   <br></br>
                   <br></br>
