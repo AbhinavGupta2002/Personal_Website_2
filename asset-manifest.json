@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2c4e2611.css",
-    "main.js": "/static/js/main.eb1f7690.js",
+    "main.js": "/static/js/main.d3c23ff4.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/speedyMathDemo.gif": "/static/media/speedyMathDemo.5a2b4325baf8b0b22129.gif",
     "static/media/headshot1.png": "/static/media/headshot1.f2eb9a403d8e0f1dbdaf.png",
     "static/media/serv2uWebsite.png": "/static/media/serv2uWebsite.f12a5c789db3ecaec0bc.png",
     "static/media/deepNN.png": "/static/media/deepNN.b0ddb571509b1a14b5a0.png",
     "static/media/personalWebsite.png": "/static/media/personalWebsite.4b95eb9ba8ab610962ac.png",
+    "static/media/tiktokHeadshot.jpeg": "/static/media/tiktokHeadshot.c13c47a087d79742e19e.jpeg",
     "static/media/aiWebscraper.png": "/static/media/aiWebscraper.828a5eef2e2cfe13eb56.png",
     "static/media/keyHavenLogo.png": "/static/media/keyHavenLogo.aa5d45320c8851df5612.png",
     "static/media/resume.pdf": "/static/media/resume.8ec5e85afac1681e457f.pdf",
@@ -15,11 +16,11 @@
     "static/media/triptailor.jpeg": "/static/media/triptailor.5189b4b02a962744c8e0.jpeg",
     "index.html": "/index.html",
     "main.2c4e2611.css.map": "/static/css/main.2c4e2611.css.map",
-    "main.eb1f7690.js.map": "/static/js/main.eb1f7690.js.map",
+    "main.d3c23ff4.js.map": "/static/js/main.d3c23ff4.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c4e2611.css",
-    "static/js/main.eb1f7690.js"
+    "static/js/main.d3c23ff4.js"
   ]
 }
