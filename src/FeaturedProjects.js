@@ -2,6 +2,7 @@ import React from 'react'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-scroll'
 import {BsGithub} from 'react-icons/bs'
+import {TbApi} from 'react-icons/tb'
 import {AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {SiDevpost} from 'react-icons/si'
 
@@ -10,6 +11,7 @@ import personalWebsite from './img/personalWebsite.png'
 import speedyMathDemo from './img/speedyMathDemo.gif'
 import serv2uWebsite from './img/serv2uWebsite.png'
 import aiWebscraper from './img/aiWebscraper.png'
+import tinyGen from './img/tinyGen.png'
 import connectPlus from './img/connectPlus.jpg'
 import tripTailor from './img/triptailor.jpeg'
 import keyHaven from './img/keyHavenLogo.png'
@@ -31,6 +33,7 @@ const TAG = {
         Sklearn: 'SkLearn',
         Mongodb: 'MongoDB',
         Chromadb: 'Chroma VectorDB',
+        Supabase: 'Supabase',
         Gcp: 'GCP',
         Aws: 'AWS',
         Cohere: 'Cohere API',
@@ -78,9 +81,25 @@ export const FeaturedProjects = () => {
             ]
         },
         {
+            thumbnail: tinyGen,
+            title: 'TinyGen',
+            body: 'AI-powered API service that can fix/modify your code on GitHub in seconds, based on your request.',
+            tags: [TAG.Language.Python, TAG.Framework.FastApi, TAG.Concept.Llm, TAG.Tool.OpenAi, TAG.Tool.Supabase, TAG.Framework.Langchain, TAG.Tool.Render,TAG.Tool.Git],
+            links: [
+                {
+                    logo: <BsGithub className='hover:text-blue-600 cursor-pointer transition-colors duration-200'/>,
+                    link: 'https://github.com/AbhinavGupta2002/TinyGen'
+                },
+                {
+                    logo: <TbApi className='hover:text-blue-600 cursor-pointer transition-colors duration-200 text-2xl'/>,
+                    link: 'https://tinygen-terq.onrender.com/docs'
+                }
+            ]
+        },
+        {
             thumbnail: aiWebscraper,
-            title: 'AI WebScraper',
-            body: 'Microservice of APIs to get an overview, industries, operations, and services of any company in the world from just their website URL. [Not Open Source]',
+            title: 'AI Company Analysis',
+            body: 'AI-powered API service that can get an overview, industries, operations, and services of any company in the world from just their website URL. [Not Open Source]',
             tags: [TAG.Language.Python, TAG.Framework.FastApi, TAG.Concept.Llm, TAG.Tool.OpenAi, TAG.Tool.Docker, TAG.Tool.RedisCache, TAG.Framework.Langchain, TAG.Concept.Rag, TAG.Tool.Chromadb, TAG.Tool.Git],
         },
         {

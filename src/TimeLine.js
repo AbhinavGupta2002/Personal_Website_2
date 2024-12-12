@@ -38,6 +38,8 @@ export const TimeLine = () => {
                                     <TimeLineList
                                         points={[
                                             "Built scripts to deploy ML models to production and scaling them accordingly.",
+                                            "Built an automated service with Gemini LLM to summarize technician work, cutting tech support response times by 70%.",
+                                            "Productionized scalable batch processing pipelines using GCP Dataflow to run Gemini Flash 1.5, such as for enabling the daily translation of 200,000 customer chats into French, orchestrated through Apache Airflow for seamless automation - reducing operational costs by 25% and enabling faster data processing for business-critical use cases.",
                                             "Developed software to streamline CloudSQL schema changes from DEV to UAT and PROD using AtlasGo, Bash, and YAML being run on GitLab CI/CD - eliminating the chance for DDL mismatches between database environments. These databases store training data for the models.",
                                             "Built a BentoML unit testing framework with Python, Pytest, and Docker to test the model and its API logic, which will run in the CI pipeline with Jenkins, for Bell's data scientists to implement for their respective AI projects - cutting down errors in production by 50%."
                                         ]}
@@ -148,7 +150,7 @@ const TimeLineLogo = (props) => {
         <a href={props.companyUrl} target='_blank' className='w-fit -ml-12 z-50 hidden sm:block'>
             <img
                 src={props.imgUrl}
-                className='w-10 h-10 rounded-full object-cover'
+                className='w-10 h-10 rounded-full object-cover border border-gray-400'
                 alt='Description of the image'
             />
         </a>
