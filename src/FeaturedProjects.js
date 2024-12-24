@@ -117,7 +117,7 @@ export const FeaturedProjects = () => {
         {
             thumbnail: serv2uWebsite,
             title: 'Serv2U',
-            body: 'Online web marketplace for people to order meals prepared by homecooks and having it delivered to their doorstep.',
+            body: 'Online web marketplace for people to order meals prepared by homecooks and having it delivered to their doorstep. [Not Open Source]',
             tags: [TAG.Concept.Fremp, TAG.Framework.ReactJs, TAG.Tool.Mongodb, TAG.Framework.Flask, TAG.Tool.Gcp, TAG.Tool.Redux, TAG.Tool.Heroku, TAG.Language.Jsx],
             titleLink: 'https://www.serv2u.org',
             links: [
