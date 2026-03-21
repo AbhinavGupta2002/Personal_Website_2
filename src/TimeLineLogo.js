@@ -16,7 +16,7 @@ const BRAND_FILES = {
 };
 
 const frameClass =
-  'w-10 h-10 flex-shrink-0 rounded-full object-contain border border-gray-400 bg-white p-0.5 overflow-hidden';
+  'w-10 h-10 flex-shrink-0 rounded-full object-contain border border-slate-300 bg-white p-0.5 overflow-hidden';
 
 export const TimeLineLogo = ({
   brand,

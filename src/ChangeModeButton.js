@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs'
-import { useSelector, useDispatch} from 'react-redux'
+import React from 'react';
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
+import { useSelector, useDispatch } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { actions } from './ReduxStates/index'
 
 const ChangeModeButton = () => {
-  const [mobileLayout, setMobileLayout] = useState(false)
-  // redux values
   const mode = useSelector((state) => state.mode)
   const dispatch = useDispatch()
-  const {toggleMode} = bindActionCreators(actions, dispatch)
+  const { toggleMode } = bindActionCreators(actions, dispatch)
 
-  useEffect(() => {
-    const handleLayout = () => {
-      setMobileLayout(window.innerWidth <= 585)
-    }
-    window.addEventListener("scroll", handleLayout)
-    return () => window.removeEventListener("scroll", handleLayout)
-  })
   return (
     <button
-    className={mobileLayout ? "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed bottom-5 right-5 text-black opacity-80" : "px-5 py-3 rounded bg-slate-300 hover:bg-slate-400 fixed bottom-5 right-5 text-black"}
-    onClick={() => mode === 'day' ? toggleMode('night') : toggleMode('day')}>
-        {mode === 'day' ? <BsFillMoonStarsFill style={{fontSize: '110%'}}/> : <BsFillSunFill style={{fontSize: '110%'}}/>}
+      className={`fixed bottom-5 right-5 z-40 p-3.5 rounded-xl backdrop-blur-md shadow-lg ring-1 hover:shadow-xl transition-all duration-300 ${mode === 'day'
+        ? 'bg-slate-200 ring-slate-300 hover:ring-blue-300 text-slate-700 shadow-slate-300/50'
+        : 'bg-slate-800/90 ring-slate-700 hover:ring-slate-600 text-slate-400 shadow-black/30'}`}
+      onClick={() => mode === 'day' ? toggleMode('night') : toggleMode('day')}
+      aria-label={`Switch to ${mode === 'day' ? 'dark' : 'light'} mode`}
+    >
+      {mode === 'day' ? <BsFillMoonStarsFill className="w-4 h-4 text-blue-500" /> : <BsFillSunFill className="w-4 h-4 text-amber-400" />}
     </button>
   );
 };
