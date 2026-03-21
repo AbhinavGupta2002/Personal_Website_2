@@ -2,7 +2,7 @@ import { TikTokEmbed } from 'react-social-media-embed';
 import { useSelector } from 'react-redux'
 import React from 'react';
 
-import tiktokHeadshot from './img/tiktokHeadshot.jpeg'
+import tiktokHeadshot from '../img/tiktokHeadshot.jpeg'
 
 const TikTokHighlights = () => {
     const tikToks = [
@@ -25,6 +25,7 @@ const TikTokHighlights = () => {
                             src={tiktokHeadshot}
                             width='80px'
                             className='rounded-full border border-gray-400'
+                            alt="TikTok profile"
                         />
                         <div className='flex flex-col items-center'>
                             <div className='text-sm'>Check Out More</div>
@@ -33,8 +34,8 @@ const TikTokHighlights = () => {
                     </a>
                 </div>
             </div>
-            {tikToks.map((tikTok, _) => (
-                <div className='flex justify-center'>
+            {tikToks.map((tikTok) => (
+                <div className='flex justify-center' key={tikTok.url}>
                     <TikTokEmbed url={tikTok.url} width={320} height={570}/>
                 </div>
             ))}

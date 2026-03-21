@@ -2,13 +2,11 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link} from 'react-scroll'
 import TimeLineList from './TimeLineList'
+import TimeLineLogo from './TimeLineLogo'
 
 export const TimeLine = () => {
     /*<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
-        <TimeLineLogo
-            imgUrl='https://logo.clearbit.com/www.tesla.com'
-            companyUrl='https://www.tesla.com'
-        />
+        <TimeLineLogo brand="tesla" companyName="Tesla" companyUrl='https://www.tesla.com' />
         <h3 className="text-xl font-semibold tracking-wide">Full Stack Engineer Intern</h3>
         <h3 className="text-xl font-semibold tracking-wide">Tesla</h3>
         <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>May 2024 - Aug 2024</time>
@@ -29,7 +27,28 @@ export const TimeLine = () => {
                             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300 text-center sm:text-left">
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.bell.net'
+                                        brand="amazon"
+                                        companyName="Amazon - Alexa Plus"
+                                        companyUrl='https://alexa.amazon.com/about'
+                                    />
+                                    <h3 className="text-xl font-semibold tracking-wide">Software Development Engineer I</h3>
+                                    <h3 className="text-xl font-semibold tracking-wide">Amazon - Alexa Plus</h3>
+                                    <time className={mode === 'day' ? "text-xs tracking-wide uppercase text-gray-600" : "text-xs tracking-wide uppercase text-gray-500"}>June 2025 - Present</time>
+                                    <TimeLineList
+                                        points={[
+                                            "Launched GenAI-powered personalization systems for Alexa devices in Java, generating context-aware and timely recommendations from user signals, increasing customer engagement by 20%.",
+                                            "Engineered a real-time event-driven pipeline for live sports updates (e.g., NFL halftime events), generating 500K+ notifications using LLMs per day, increasing customer engagement by 40%.",
+                                            "Optimized LLM latency, operational costs, and AWS Bedrock inferencing capacity for Anthropic models by up to 70% by optimizing prompts, introducing dynamic prompt generation, and caching input tokens across production pipelines.",
+                                            "Engineered an LLM-as-a-Judge layer to evaluate AI-generated personalized podcast topics for Alexa, automatically invalidating 30% of low-quality topics, processing 10,000 beta customers daily.",
+                                            "Built and owned a business metrics and observability pipeline (AWS CloudWatch, S3, Lambda, SQS) to track user engagement, system performance, and LLM performance.",
+                                            "Drove a 90% reduction in data compliance risks through privacy and security reviews for GenAI services; enforced GDPR and DMA compliance, implemented safeguards against prompt injections, and integrated real-time PII detection with AWS Bedrock Guardrails."
+                                        ]}
+                                    />
+                                </div>
+                                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
+                                    <TimeLineLogo
+                                        brand="bell"
+                                        companyName="Bell"
                                         companyUrl='https://www.bell.ca'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Machine Learning Engineer Intern</h3>
@@ -48,7 +67,8 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.tesla.com'
+                                        brand="tesla"
+                                        companyName="Tesla"
                                         companyUrl='https://www.tesla.com'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Full Stack Engineer Intern</h3>
@@ -58,7 +78,8 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/DeloitteNewSmall.png/220px-DeloitteNewSmall.png'
+                                        brand="deloitte"
+                                        companyName="Deloitte"
                                         companyUrl='https://www2.deloitte.com/us/en/pages/consulting/solutions/cloud-consulting-services.html'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Cloud Backend Engineer Intern</h3>
@@ -74,7 +95,8 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://yt3.googleusercontent.com/Bv3yP23hUhC_Ct0Ua4LKSN-8KBW8-suhdA8id7XStnOkxX2H9_e4kds_BBJFzRz6HiOtehs6Ew=s900-c-k-c0x00ffffff-no-rj'
+                                        brand="openlane"
+                                        companyName="OpenLane"
                                         companyUrl='https://openlane.com'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Backend Engineer Intern</h3>
@@ -91,8 +113,9 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.serv2u.org'
-                                        companyUrl='https://www.serv2u.org'
+                                        brand="serv2u"
+                                        companyName="Serv2U"
+                                        linkable={false}
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">CTO and Co-Founder</h3>
                                     <h3 className="text-xl font-semibold tracking-wide">Serv2U</h3>
@@ -108,7 +131,8 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.tutorocean.com'
+                                        brand="tutorocean"
+                                        companyName="TutorOcean"
                                         companyUrl='https://www.tutorocean.com'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Frontend Developer Intern</h3>
@@ -124,7 +148,8 @@ export const TimeLine = () => {
                                 </div>
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1]">
                                     <TimeLineLogo
-                                        imgUrl='https://logo.clearbit.com/www.tutorocean.com'
+                                        brand="tutorocean"
+                                        companyName="TutorOcean"
                                         companyUrl='https://www.tutorocean.com'
                                     />
                                     <h3 className="text-xl font-semibold tracking-wide">Test Automation Developer Intern</h3>
@@ -143,18 +168,6 @@ export const TimeLine = () => {
                     </div>
                 </div>
             </section>
-    )
-}
-
-const TimeLineLogo = (props) => {
-    return (
-        <a href={props.companyUrl} target='_blank' className='w-fit -ml-12 z-50 hidden sm:block'>
-            <img
-                src={props.imgUrl}
-                className='w-10 h-10 rounded-full object-cover border border-gray-400'
-                alt='Description of the image'
-            />
-        </a>
     )
 }
 

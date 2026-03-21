@@ -27,15 +27,15 @@ export const Header = () => {
               </h2>
               <p className={mode === 'day' ? "text-base text-gray-700 md:text-lg" : "text-base text-gray-400 md:text-lg"}>
                   <p>
-                      I am a 4th year student studying Honors Computer Science - Software Engineering Specialization at the University of Waterloo.
+                      I am an AI Engineer at Amazon, building Generative AI products for Alexa experiences at scale.
                   </p>
                   <br></br>
                   <p>
-                      As an intern, I have been developing great software for industry-leading companies. As a CTO, I managed teams to build an innovative product from scratch.
+                      I graduated from the University of Waterloo with an Honours Bachelor of Computer Science specializing in Software Engineering.
                   </p>
                   <br></br>
                   <p>
-                      I am currently looking for new grad opportunities starting Summer 2025.
+                      I have interned at industry-leading companies including Bell, Deloitte, and OpenLane. As a co-founder of Serv2U, I led a team to build an on-demand home-cooked meal delivery service.
                   </p>
                   <br></br>
                   <br></br>
