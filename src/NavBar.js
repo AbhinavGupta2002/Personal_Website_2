@@ -27,6 +27,7 @@ export const NavBar = () => {
         : 'block py-2 font-medium tracking-wide text-slate-300 transition-colors duration-200 hover:text-blue-400 cursor-pointer';
 
     return (
+      <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
         <div className="px-4 py-4 mx-auto max-w-6xl md:px-8">
           <div className="flex items-center justify-between">
@@ -84,42 +85,76 @@ export const NavBar = () => {
           </div>
         </div>
 
-        {/* Mobile menu overlay */}
-        <div className={`fixed inset-0 z-50 lg:hidden transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setIsMenuOpen(false)} />
-          <div className={`absolute top-0 right-0 w-72 h-full transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} ${mode === 'day' ? 'bg-white shadow-2xl' : 'bg-slate-900 shadow-2xl'}`}>
-            <div className="flex items-center justify-between p-5 border-b border-slate-200/10">
-              <span className={`text-lg font-bold uppercase ${mode === 'day' ? 'text-slate-900' : 'text-white'}`}>
+      </nav>
+
+      {/* Mobile menu overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-[100] lg:hidden">
+          <div className="absolute inset-0 bg-black/30" onClick={() => setIsMenuOpen(false)} />
+          <div
+            className={`absolute top-4 right-4 w-64 rounded-2xl shadow-2xl ring-1 overflow-hidden ${mode === 'day'
+              ? 'bg-white ring-slate-200'
+              : 'bg-slate-900 ring-slate-700'}`}
+            style={{ zIndex: 101 }}
+          >
+            <div className={`flex items-center justify-between px-5 pt-4 pb-3`}>
+              <span className={`text-sm font-bold uppercase tracking-wider ${mode === 'day' ? 'text-slate-400' : 'text-slate-500'}`}>
                 Menu
               </span>
               <button
                 aria-label="Close Menu"
-                className={`p-2 rounded-lg transition-colors ${mode === 'day' ? 'hover:bg-slate-100' : 'hover:bg-slate-800'}`}
+                className={`p-1.5 rounded-lg transition-colors ${mode === 'day' ? 'hover:bg-slate-100 text-slate-500' : 'hover:bg-slate-800 text-slate-400'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                <svg className={`w-5 h-5 ${mode === 'day' ? 'text-slate-600' : 'text-slate-400'}`} fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
-            <nav className="p-5 space-y-1">
-              <Link smooth={true} to='WorkExperience' offset={-80} onClick={() => setIsMenuOpen(false)} className={mobileLinkClass}>Work Experience</Link>
-              <Link smooth={true} to='FeaturedProjects' offset={-80} onClick={() => setIsMenuOpen(false)} className={mobileLinkClass}>Projects</Link>
-              <Link smooth={true} to='Interests' offset={-80} onClick={() => setIsMenuOpen(false)} className={mobileLinkClass}>Interests</Link>
-              <a href={resume} target="_blank" rel="noreferrer" onClick={() => setIsMenuOpen(false)} className={mobileLinkClass}>Resume</a>
-              <div className="pt-4">
+            <div className="px-3 pb-4 space-y-0.5">
+              {[
+                { to: 'WorkExperience', label: 'Work Experience' },
+                { to: 'FeaturedProjects', label: 'Projects' },
+                { to: 'Interests', label: 'Interests' },
+              ].map(item => (
+                <Link
+                  key={item.to}
+                  smooth={true}
+                  to={item.to}
+                  offset={-80}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block px-3 py-2.5 rounded-xl font-medium tracking-wide cursor-pointer transition-colors ${mode === 'day'
+                    ? 'text-slate-700 hover:bg-slate-100 hover:text-blue-600'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-blue-400'}`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <a
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className={`block px-3 py-2.5 rounded-xl font-medium tracking-wide transition-colors ${mode === 'day'
+                  ? 'text-slate-700 hover:bg-slate-100 hover:text-blue-600'
+                  : 'text-slate-300 hover:bg-slate-800 hover:text-blue-400'}`}
+              >
+                Resume
+              </a>
+              <div className="pt-2 px-1">
                 <a
                   href="mailto:a363gupt@uwaterloo.ca"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-center py-2.5 px-6 font-medium tracking-wide text-white rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md transition-all duration-200"
+                  className="block text-center py-2.5 text-sm font-medium tracking-wide text-white rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md transition-all duration-200"
                 >
                   Contact Me
                 </a>
               </div>
-            </nav>
+            </div>
           </div>
         </div>
-      </nav>
+      )}
+      </>
     );
   };
 
